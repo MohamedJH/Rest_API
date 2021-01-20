@@ -1,24 +1,24 @@
 const mongoose = require("mongoose")
 
 const UserSchema = new mongoose.Schema({
-    lastName:{
+    Lastname:{
         type:String,
         required: true
     },
-    firstName:{
+    Firstname:{
         type:String,
         required: true
     },
-    email:{
+    Email:{
         type:String,
         required: true
     },
-    phone:{
-        type:String,
+    age:{
+        type:Number,
         required: true
     }
 
 })
 
 
-module.exports= mongoose.model("user",UserSchema)
+module.exports= mongoose.model("user",UserSchema,"contactlist")
